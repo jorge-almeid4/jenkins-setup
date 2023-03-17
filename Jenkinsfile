@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage('Git checkout'){
+            steps{
+                 git credentialsId: 'github', url: 'https://github.com/jorge-almeid4/jenkins-setup.git', branch: 'main'
+            }
+        }
         stage('Initialize'){
             steps{
                 sh 'terraform init'

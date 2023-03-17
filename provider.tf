@@ -1,4 +1,13 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "4.57.0"
+    }
+  }
+}
+
 provider "google" {
-  project = "Teste1"
-  region  = "us-central1"
+  project     = "flash-crawler-377213"
+  region      = "us-central1"
 }

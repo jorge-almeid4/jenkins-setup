@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Git checkout'){
             steps{
-                git credentialsId: 'XXX', url: 'YYY' //credentials generated on Jenkins
+                git 'https://github.com/jorge-almeid4/jenkins-setup.git'
             }
         }
         stage('Initialize'){

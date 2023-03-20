@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("/workspace/first-test-terraform/SA_key.json")
+  credentials = file("./workspace/first-test-terraform/SA_key.json")
   project     = "flash-crawler-377213"
 }

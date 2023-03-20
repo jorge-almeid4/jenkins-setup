@@ -1,5 +1,5 @@
-resource "google_storage_bucket" "terraform-bucket" {
-  name          = "first storage"
-  location      = "US"
-  force_destroy = true
+resource "google_storage_bucket" "default" {
+  name = "first-bucket"
+  storage_class = "REGIONAL"
+  location = "us-east1"
 }

@@ -10,5 +10,4 @@ terraform {
 provider "google" {
   credentials = file("SA.json")
   project     = "flash-crawler-377213"
-  region      = "us-central1"
 }

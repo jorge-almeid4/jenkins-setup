@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Plan'){
             steps{
-                sh 'export GOOGLE_APPLICATION_CREDENTIALS=SA_key.json; terraform plan'
+                sh 'terraform plan'
             }
         }
         stage('Apply'){

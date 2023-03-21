@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = $GOOGLE_APPLICATION_CREDENTIALS
+  credentials = ${GOOGLE_APPLICATION_CREDENTIALS}
   project     = "flash-crawler-377213"
 }

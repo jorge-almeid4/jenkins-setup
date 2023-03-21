@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Initialize'){
             steps{
-                sh 'terraform init'
+                sh 'sudo su; terraform init'
             }
         }
         stage('Plan'){

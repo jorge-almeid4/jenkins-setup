@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-  GOOGLE_APPLICATION_CREDENTIALS = file("/root/.config/gcloud/application_default_credentials.json")
+  credentials = file("/root/.config/gcloud/application_default_credentials.json")
   project     = "flash-crawler-377213"
 }

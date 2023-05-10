@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "google" {
-  project     = "flash-crawler-377213"
+  project     = "sandboxbv-08"
 }

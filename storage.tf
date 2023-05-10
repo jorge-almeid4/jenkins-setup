@@ -1,5 +1,5 @@
-resource "google_storage_bucket" "first-tests" {
-  name = "first-bucket-crawler-haha12"
+resource "google_storage_bucket" "bucket" {
+  name = "first-bucket-beginners"
   storage_class = "REGIONAL"
   location = "us-east1"
 }
